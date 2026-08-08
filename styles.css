@@ -252,11 +252,15 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(5, 15, 30, 0.88) 0%,
-    rgba(5, 15, 30, 0.62) 38%,
-    rgba(5, 15, 30, 0.15) 70%,
-    rgba(5, 15, 30, 0.02) 100%
+    rgba(5, 15, 30, 0.72) 0%,
+    rgba(5, 15, 30, 0.45) 38%,
+    rgba(5, 15, 30, 0.10) 65%,
+    rgba(5, 15, 30, 0.00) 100%
   );
+}
+.service-slide img {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .slide-overlay {
