@@ -205,3 +205,186 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
   .cta-box{padding:34px 26px;align-items:flex-start;flex-direction:column}
   .footer-grid{grid-template-columns:1fr}
 }
+
+
+/* ========================================
+   OLEK SERVICES IMAGE SLIDER
+======================================== */
+
+.service-slider {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  margin: 35px 0 50px;
+  overflow: hidden;
+  border-radius: 18px;
+  background: #111;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+.service-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: translateX(60px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+  pointer-events: none;
+}
+
+.service-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.service-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.service-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 15, 30, 0.88) 0%,
+    rgba(5, 15, 30, 0.62) 38%,
+    rgba(5, 15, 30, 0.15) 70%,
+    rgba(5, 15, 30, 0.02) 100%
+  );
+}
+
+.slide-overlay {
+  position: absolute;
+  z-index: 2;
+  left: 7%;
+  bottom: 14%;
+  max-width: 520px;
+  color: #fff;
+}
+
+.slide-overlay span {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f0a51a;
+}
+
+.slide-overlay h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+.slide-overlay p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.slider-arrow {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.32);
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: #f0a51a;
+  border-color: #f0a51a;
+}
+
+.slider-prev {
+  left: 20px;
+}
+
+.slider-next {
+  right: 20px;
+}
+
+.slider-dots {
+  position: absolute;
+  z-index: 5;
+  bottom: 22px;
+  right: 30px;
+  display: flex;
+  gap: 9px;
+}
+
+.slider-dot {
+  width: 9px;
+  height: 9px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slider-dot.active {
+  width: 28px;
+  border-radius: 10px;
+  background: #f0a51a;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .service-slider {
+    height: 430px;
+    border-radius: 12px;
+  }
+
+  .slide-overlay {
+    left: 7%;
+    right: 7%;
+    bottom: 15%;
+    max-width: none;
+  }
+
+  .slide-overlay h3 {
+    font-size: 29px;
+  }
+
+  .slide-overlay p {
+    font-size: 14px;
+  }
+
+  .slider-arrow {
+    width: 38px;
+    height: 38px;
+    font-size: 19px;
+  }
+
+  .slider-prev {
+    left: 10px;
+  }
+
+  .slider-next {
+    right: 10px;
+  }
+
+  .slider-dots {
+    right: 20px;
+    bottom: 18px;
+  }
+}
