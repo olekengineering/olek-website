@@ -566,3 +566,33 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
     left: 16px;
   }
 }
+/* Ja-Ela Project Stage Headings */
+
+.project-stage {
+  margin-top: 28px;
+}
+
+.project-stage h4 {
+  margin: 0 0 16px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid #2468d8;
+  color: #0b1f36;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.project-stage .experience-gallery {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .project-stage {
+    margin-top: 22px;
+  }
+
+  .project-stage h4 {
+    font-size: 15px;
+  }
+}
