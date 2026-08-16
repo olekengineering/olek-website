@@ -797,3 +797,28 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
   display: block;
   color: #ffffff;
 }
+@media (max-width: 768px) {
+
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .hero-video-card {
+    display: block !important;
+    width: 100% !important;
+    max-width: 420px !important;
+    aspect-ratio: 1 / 1 !important;
+    margin: 28px auto !important;
+    overflow: hidden !important;
+    border-radius: 20px !important;
+  }
+
+  .hero-video-card .hero-video {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
