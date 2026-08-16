@@ -199,7 +199,7 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
   .main-nav.open{display:flex}
   .menu-toggle{display:block}
   .hero-grid,.intro-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
-  .hero-card{display:none}
+  .hero-card{display:block}
   .service-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:680px){
