@@ -822,3 +822,42 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
     object-position: center !important;
   }
 }
+@media (max-width: 768px) {
+
+  .hero .container {
+    width: calc(100% - 32px) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-copy {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .hero-video-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 28px auto 16px !important;
+    box-sizing: border-box !important;
+    align-self: center !important;
+  }
+
+  .hero-video {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+
+}
