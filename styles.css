@@ -873,3 +873,11 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
 .service-link:hover {
   text-decoration: underline;
 }
+html {
+  scroll-padding-top: 95px;
+}
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 110px;
+  }
+}
