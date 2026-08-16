@@ -764,3 +764,30 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
     margin: 0 auto !important;
   }
 }
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 46px !important;
+    line-height: 1 !important;
+  }
+
+  .hero-trust {
+    padding-right: 55px !important;
+  }
+
+  .hero-trust strong {
+    font-size: 12px !important;
+  }
+
+  .hero-trust span {
+    font-size: 9px !important;
+  }
+
+  .whatsapp-float {
+    width: 56px !important;
+    height: 56px !important;
+    font-size: 16px !important;
+    right: 14px !important;
+    bottom: 20px !important;
+  }
+}
