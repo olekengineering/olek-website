@@ -791,3 +791,9 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
     bottom: 20px !important;
   }
 }
+.floating-whatsapp svg {
+  width: 30px;
+  height: 30px;
+  display: block;
+  color: #ffffff;
+}
