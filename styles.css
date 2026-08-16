@@ -701,3 +701,66 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
     object-fit: cover;
   }
 }
+/* ===== OLEK MOBILE HERO FIX ===== */
+@media (max-width: 768px) {
+
+  .hero .container {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+  }
+
+  .hero h1 {
+    font-size: 52px !important;
+    line-height: 0.98 !important;
+    letter-spacing: -1.8px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-copy > p {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+    margin-bottom: 26px !important;
+  }
+
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+  }
+
+  .hero-actions .btn {
+    min-height: 54px !important;
+    padding: 12px 8px !important;
+    font-size: 14px !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-trust {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+    margin-top: 28px !important;
+    padding-top: 22px !important;
+  }
+
+  .hero-trust strong {
+    font-size: 13px !important;
+  }
+
+  .hero-trust span {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+  }
+
+  .hero-video-card {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+}
