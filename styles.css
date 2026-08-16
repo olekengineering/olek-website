@@ -861,3 +861,15 @@ footer{background:#07111f;color:#c8d2df;padding-top:54px}
   }
 
 }
+.service-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.service-link:hover {
+  text-decoration: underline;
+}
